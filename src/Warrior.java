@@ -6,7 +6,7 @@ public class Warrior {
         String shield;
 
         public Warrior() {
-                this.name = "Atilla the hun";
+                this.name = "Atilla The Hun";
                 this.lifePoints = 10;
                 this.attack = 10;
                 this.weaponType = "Axe";
