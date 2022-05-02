@@ -1,9 +1,9 @@
-public class Warrior {
+public class Mage {
     public static void main(String[] args) {
         String name;
         Integer lifePoints;
         Integer attack;
-        String weaponType;
-        String shield;
+        String spell;
+        String potion;
     }
 }
