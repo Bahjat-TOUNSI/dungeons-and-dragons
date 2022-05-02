@@ -1,14 +1,11 @@
-public class Mage {
-    String name;
-    Integer lifePoints;
-    Integer attack;
+public class Mage extends Hero {
     String spell;
     String potion;
 
     public Mage() {
         this.name = "The White Wizard";
-        this.lifePoints = 4;
-        this.attack = 12;
+        this.lifePoints = 3;
+        this.attack = 8;
         this.spell = "ignite";
         this.potion = "heal";
     }
