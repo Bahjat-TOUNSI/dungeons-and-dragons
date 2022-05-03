@@ -7,6 +7,7 @@ public class StartGame {
         Scanner input = new Scanner(System.in);
         Warrior warrior = new Warrior();
         Mage mage = new Mage();
+        Board play = new Board();
         System.out.println("Press 1 to Play or 0 to Quit");
         int userChoice = playOrQuit.nextInt();
         if (userChoice == 1) {
@@ -25,6 +26,7 @@ public class StartGame {
                 mage.setName(input.nextLine());
                 System.out.println(mage);
             }
+            play.goToTheEnd();
         }if (userChoice == 0){
             System.out.println("Sorry to see you go");
         } else if (userChoice != 1) {
