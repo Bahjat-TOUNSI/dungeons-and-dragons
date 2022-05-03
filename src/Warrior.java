@@ -25,4 +25,13 @@ public class Warrior extends Hero {
         public void setShield(String shield) {
                 this.shield = shield;
         }
+
+        @Override
+        public String toString() {
+                return "Your name: " + this.getName() + "\n"
+                        + "HP: " + this.getLifePoints() + "\n"
+                        + "Attack power: " + this.getAttack() + "\n"
+                        + "Weapon: " + this.getWeaponType() + "\n"
+                        + "Defense: " + this.getShield();
+        }
 }

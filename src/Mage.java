@@ -25,4 +25,13 @@ public class Mage extends Hero {
     public void setPotion(String potion) {
         this.potion = potion;
     }
+
+    @Override
+    public String toString() {
+        return "Your name: " + this.getName() + "\n"
+                + "HP: " + this.getLifePoints() + "\n"
+                + "Attack power: " + this.getAttack() + "\n"
+                + "Spell: " + this.getSpell() + "\n"
+                + "Potion: " + this.getPotion();
+    }
 }
