@@ -1,12 +1,9 @@
 import java.util.Scanner;
 
-public class StartGame {
+public class Menu {
 
     public void launch() {
         Scanner playOrQuit = new Scanner(System.in);
-        Scanner input = new Scanner(System.in);
-        Warrior warrior = new Warrior();
-        Mage mage = new Mage();
         Board play = new Board();
         System.out.println("Press 1 to Play or 0 to Quit");
         int userChoice = playOrQuit.nextInt();
@@ -18,13 +15,11 @@ public class StartGame {
             if (chosenCharacter == 1) {
                 System.out.println("You chose the Warrior class!");
                 System.out.println("What is your name?");
-                warrior.setName(input.nextLine());
-                System.out.println(warrior);
+                displayInfoWarrior();
             }if (chosenCharacter == 2) {
                 System.out.println("You chose the Mage class!");
                 System.out.println("What is your name?");
-                mage.setName(input.nextLine());
-                System.out.println(mage);
+                displayInfoMage();
             }
             play.goToTheEnd();
         }if (userChoice == 0){
@@ -32,5 +27,18 @@ public class StartGame {
         } else if (userChoice != 1) {
             System.out.println("Error Please choose 1 or 0");
         }
+    }
+    public void displayInfoWarrior() {
+        Warrior warrior = new Warrior();
+        Scanner input = new Scanner(System.in);
+        warrior.setName(input.nextLine());
+        System.out.println(warrior);
+    }
+
+    public void displayInfoMage() {
+        Mage mage = new Mage();
+        Scanner input = new Scanner(System.in);
+        mage.setName(input.nextLine());
+        System.out.println(mage);
     }
 }
