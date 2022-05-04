@@ -14,7 +14,7 @@ public class Board {
         while (getPosition() < getBoardLength()) {
             movePlayer();
             System.out.println(this.position);
-            if (getPosition() > getBoardLength()) {
+            if (getPosition() >= getBoardLength()) {
                 System.out.println("Congrats you won the game!!");
             }
         }
