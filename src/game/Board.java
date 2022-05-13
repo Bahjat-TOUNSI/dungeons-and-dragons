@@ -27,7 +27,6 @@ public class Board {
         }
     }
 
-
     /**
      * Prints the board
      */
@@ -50,8 +49,4 @@ public class Board {
             return board[cellNumber].getSurprise();
         }
     }
-
-
-
-
 }

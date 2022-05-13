@@ -47,11 +47,12 @@ public abstract class Hero extends Character {
 
 
     /**
-     * @param name
-     * @param lifePoints
-     * @param force
-     * @param maxLifePoints
-     * @param maxAttackForce
+     * the hero method is used to create a hero with the following parameters
+     * @param name sets the hero's name
+     * @param lifePoints defines the hero's life points
+     * @param force defines the hero's attack force
+     * @param maxLifePoints defines the hero's maximum life points
+     * @param maxAttackForce defines the hero's maximum attack force
      */
     public Hero(String name, int lifePoints, int force, int maxLifePoints, int maxAttackForce) {
         super(name, lifePoints, force);

@@ -19,6 +19,7 @@ public class Game {
     private Scanner scanner = new Scanner(System.in);
 
 
+
     public void setBoard(Board board) {
         this.board = board;
     }
@@ -65,7 +66,7 @@ public class Game {
     /**
      * @param letter the letter corresponding to the character type typed by the player
      * @param name   the name of the character typed by the player
-     * @return an instance of the hero according to the type
+     * @return returns an instance of the hero according to the type
      */
     public Hero createNewCharacter(char letter, String name) {
         Hero newCharacter = null;
@@ -83,8 +84,6 @@ public class Game {
 
     /**
      * The menu to choose between display or modify the hero's infos
-     *
-     * @return the letter corresponding to the player's choice
      */
     public void displayOrModifyHeroInfos() {
         char letterChar = '!';
@@ -113,7 +112,7 @@ public class Game {
     /**
      * Ask hero's settings & creates it
      *
-     * @return an instance of the hero created
+     * @return returns an instance of the hero created
      */
     public Hero setAndCreateNewHero() {
         char letterChar = '!';
@@ -178,13 +177,11 @@ public class Game {
                     System.exit(0);
                 }
             }
-
-
         }
     }
 
     /**
-     * Displays the Menu and launches again the game or exit according to the player's choice
+     * Displays the Menu and launches the game again or exits' according to the player's choice
      */
     public void displayEndOfGameMenu() {
         char letterChar = '!';
@@ -208,7 +205,7 @@ public class Game {
     }
 
     /**
-     * Displays the menu and directs the player according to his/her choice
+     * Displays the menu and directs the player according to his choice
      */
     public void displayMenu() {
         char letterChar = '!';

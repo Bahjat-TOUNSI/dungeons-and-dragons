@@ -14,7 +14,7 @@ public class Dice {
 
 
     /**
-     * Gives a random number correspondig to the dice when rolled and stores it into value
+     * Gives a random number corresponding to the dice when rolled and stores it into value
      */
     public void rollTheDice(){
         Random random = new Random();
