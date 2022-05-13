@@ -157,7 +157,7 @@ public class Game {
                     int newPosition = hero.getPosition() + diceValue;
                     hero.setPosition(newPosition);
                     try {
-                        ISurprise surprise = board.goToSquare(newPosition);
+                        Surprise surprise = board.goToCell(newPosition);
                         System.out.println("Vous avancez à la case " + newPosition +".");
                         System.out.println(surprise.openSurprise(hero));
                         System.out.println("Vous avez " + hero.getLifePoints() +" points de vie et " + hero.getForce() + " points d'attaque.");

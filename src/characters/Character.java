@@ -69,8 +69,5 @@ public abstract class Character {
     public void takeBlow(Character attackingCharacter){
 
         setLifePoints(getLifePoints()-attackingCharacter.force);
-
     }
-
-
 }

@@ -3,26 +3,25 @@ package game;
 import characters.monsters.Dragon;
 import characters.monsters.Goblin;
 import characters.monsters.Sorcerer;
-import equipment.EmptySquare;
+import equipment.EmptyCell;
 import equipment.potions.LargePotion;
 import equipment.potions.NormalPotion;
 import equipment.spells.Fireball;
 import equipment.spells.Lightning;
 import equipment.weapons.Hammer;
 import equipment.weapons.Sword;
-
 import java.util.Random;
 
-public class Square {
+public class Cell {
 
-    ISurprise surprise;
+    Surprise surprise;
 
-    public Square(){
+    public Cell(){
 
         Random random = new Random();
-        int randomSquareType = random.nextInt(100 - 1) + 1;
+        int randomCellType = random.nextInt(100 - 1) + 1;
 
-        if (randomSquareType > 70){
+        if (randomCellType > 70){
             int randomMonsterType = random.nextInt(100 - 1) + 1;
             if(randomMonsterType > 66){
                 surprise = new Goblin();
@@ -31,7 +30,7 @@ public class Square {
             } else {
                 surprise = new Sorcerer();
             }
-        } else if(randomSquareType > 30){
+        } else if(randomCellType > 30){
             int randomEquipmentType = random.nextInt(100 - 1) + 1;
             if(randomEquipmentType > 66){
                 int randomPotionType = random.nextInt(100 - 1) + 1;
@@ -56,12 +55,12 @@ public class Square {
                 }
             }
         } else {
-            surprise = new EmptySquare();
+            surprise = new EmptyCell();
         }
     }
 
 
-    public ISurprise getSurprise(){
+    public Surprise getSurprise(){
         return surprise;
     }
 

@@ -1,9 +1,9 @@
 package equipment;
 
 import characters.heroes.Hero;
-import game.ISurprise;
+import game.Surprise;
 
-public class EmptySquare implements ISurprise {
+public class EmptyCell implements Surprise {
     public String openSurprise(Hero hero){
         return "La case est vide ! ";
     }

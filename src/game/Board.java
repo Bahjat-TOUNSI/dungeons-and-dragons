@@ -6,23 +6,22 @@ import exceptions.OutOfBoardCharacterException;
 public class Board {
 
     private int boardLength = 64;
-    private Square[] board = new Square[boardLength];
+    private Cell[] board = new Cell[boardLength];
 
 
 
 
-    public Square[] getBoard() {
+    public Cell[] getBoard() {
         return board;
     }
 
-    /****CONSTRUCTOR****/
     /**
      * Creates the board and fills it
      */
     public Board() {
         int counter = 0;
         while (counter < boardLength) {
-            Square square = new Square();
+            Cell square = new Cell();
             board[counter] = square;
             counter++;
         }
@@ -40,15 +39,15 @@ public class Board {
 
     /**
      * Gets the surprise of the square
-     * @param squareNb the number of the square
-     * @throws OutOfBoardCharacterException when the number in parameter is higher to the number of the board length
-     * @return the surprise corresponding to the square
+     * @param cellNumber the number of the square
+     * @throws OutOfBoardCharacterException when the number in parameter is higher than the board length an exception gets thrown
+     * @return the surprise corresponding to the cell
      */
-    public ISurprise goToSquare(int squareNb) throws OutOfBoardCharacterException {
-        if (squareNb >= board.length) {
+    public Surprise goToCell(int cellNumber) throws OutOfBoardCharacterException {
+        if (cellNumber >= board.length) {
             throw new OutOfBoardCharacterException();
         } else {
-            return board[squareNb].getSurprise();
+            return board[cellNumber].getSurprise();
         }
     }
 

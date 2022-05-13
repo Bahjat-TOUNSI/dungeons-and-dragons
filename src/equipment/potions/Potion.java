@@ -20,6 +20,5 @@ public abstract class Potion extends Equipment {
             System.out.println("Hero après potion: " + hero.getLifePoints());
             return "Vous avez ramassé une potion de type " + this.getName() + ". Elle vous donne " + this.getPower() +" points de vie en plus. Vous avez donc " + hero.getLifePoints() + "points de vie.";
         }
-
-    };
+    }
 }

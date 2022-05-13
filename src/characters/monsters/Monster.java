@@ -2,10 +2,10 @@ package characters.monsters;
 
 import characters.Character;
 import characters.heroes.Hero;
-import game.ISurprise;
+import game.Surprise;
 
 
-public abstract class Monster extends Character implements ISurprise {
+public abstract class Monster extends Character implements Surprise {
 
 
     public Monster(String name, int lifePoints, int force) {
