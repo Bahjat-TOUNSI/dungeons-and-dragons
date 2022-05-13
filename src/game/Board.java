@@ -1,16 +1,16 @@
 package game;
 
 import exceptions.OutOfBoardCharacterException;
-
-
 public class Board {
 
     private int boardLength = 64;
     private Cell[] board = new Cell[boardLength];
 
 
-
-
+    /**
+     * this method will get the board
+     * @return returns the board variable
+     */
     public Cell[] getBoard() {
         return board;
     }
@@ -37,8 +37,8 @@ public class Board {
     }
 
     /**
-     * Gets the surprise of the square
-     * @param cellNumber the number of the square
+     * Gets the surprise of the cell
+     * @param cellNumber the number of the cell
      * @throws OutOfBoardCharacterException when the number in parameter is higher than the board length an exception gets thrown
      * @return the surprise corresponding to the cell
      */
