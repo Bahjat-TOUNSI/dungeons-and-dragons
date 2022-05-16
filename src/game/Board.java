@@ -1,10 +1,12 @@
 package game;
 
 import exceptions.OutOfBoardCharacterException;
+import java.util.*;
 public class Board {
 
     private int boardLength = 64;
     private Cell[] board = new Cell[boardLength];
+    List<Cell> listOfElements;
 
 
     /**
@@ -19,11 +21,17 @@ public class Board {
      * Creates the board and fills it
      */
     public Board() {
+        listOfElements = new ArrayList<Cell>();
         int counter = 0;
         while (counter < boardLength) {
             Cell square = new Cell();
             board[counter] = square;
             counter++;
+            listOfElements.add(square);
+        }
+        for (Cell element : listOfElements
+        ) {
+            System.out.println(element);
         }
     }
 

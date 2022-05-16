@@ -2,6 +2,7 @@ package game;
 
 import characters.monsters.Dragon;
 import characters.monsters.Goblin;
+import characters.monsters.Monster;
 import characters.monsters.Sorcerer;
 import equipment.EmptyCell;
 import equipment.potions.LargePotion;
@@ -15,6 +16,7 @@ import java.util.Random;
 public class Cell {
 
     Surprise surprise;
+
 
     public Cell(){
 
@@ -59,6 +61,10 @@ public class Cell {
         }
     }
 
+    @Override
+    public String toString() {
+        return "" + surprise;
+    }
 
     public Surprise getSurprise(){
         return surprise;
