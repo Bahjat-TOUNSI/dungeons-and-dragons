@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class DataBase {
 
-    public void getHero() throws Exception{
+    public void getHeroFromDataBase() throws Exception{
 
         Properties props = new Properties();
         try (
@@ -20,7 +20,7 @@ public class DataBase {
         String password = props.getProperty("jdbc.password");
         try( Connection connection = DriverManager.getConnection(url, login, password) ) {
 //            String strSql = "INSERT INTO hero (Type, Nom, NiveauVie, NiveauForce, Arme, Bouclier)"
-//                    + "VALUES ('Mage', 'Test', '300', '1200', 'rien', 'skateboard' )";
+//                          + "VALUES ('Mage', 'Test', '300', '1200', 'rien', 'skateboard' )";
 //            try (Statement statement = connection.createStatement()) {
 //                statement.executeUpdate(strSql);
 //            }
@@ -36,7 +36,7 @@ public class DataBase {
                         int attackPower = resultSet.getInt("NiveauForce");
                         String weapon = resultSet.getString("Arme");
                         String shield = resultSet.getString("Bouclier");
-                        System.out.printf("%d: %s %s %d %d %s %s\n", id, type, name, hp, attackPower, weapon, shield);
+                        System.out.printf("\nCe qui est enregistrée dans la data base:\n" + "%d: %s %s %d %d %s %s\n", id, type, name, hp, attackPower, weapon, shield + "\n");
                     }
                 }
             }
