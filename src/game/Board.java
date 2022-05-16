@@ -18,9 +18,7 @@ public class Board {
     }
 
     /**
-     * Creates the board and fills it with enemies,
-     * weapons and potions.
-     * Adds all elements to an arraylist
+     * Creates the board and fills it
      */
     public Board() {
         listOfElements = new ArrayList<Cell>();
