@@ -18,7 +18,9 @@ public class Board {
     }
 
     /**
-     * Creates the board and fills it
+     * Creates the board and fills it with enemies,
+     * weapons and potions.
+     * Adds all elements to an arraylist
      */
     public Board() {
         listOfElements = new ArrayList<Cell>();
@@ -33,6 +35,7 @@ public class Board {
 //        ) {
 //            System.out.println(element);
 //        }
+//        System.out.println(listOfElements.get(42));
     }
 
     /**

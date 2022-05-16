@@ -61,10 +61,10 @@ public class Cell {
         }
     }
 
-//    @Override
-//    public String toString() {
-//        return "" + surprise;
-//    }
+    @Override
+    public String toString() {
+        return "" + surprise;
+    }
 
     public Surprise getSurprise(){
         return surprise;
