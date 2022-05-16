@@ -20,7 +20,7 @@ public class DataBase {
         String password = props.getProperty("jdbc.password");
         try( Connection connection = DriverManager.getConnection(url, login, password) ) {
 //            String strSql = "INSERT INTO hero (Type, Nom, NiveauVie, NiveauForce, Arme, Bouclier)"
-//                    + "VALUES ('Guerrier', 'Test', '300', '1200', 'rien', 'voiture' )";
+//                    + "VALUES ('Mage', 'Test', '300', '1200', 'rien', 'skateboard' )";
 //            try (Statement statement = connection.createStatement()) {
 //                statement.executeUpdate(strSql);
 //            }
