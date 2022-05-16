@@ -11,7 +11,7 @@ public class DataBase {
 
         Properties props = new Properties();
         try (
-                FileInputStream fis = new FileInputStream( "conf.properties" ) ) {
+                FileInputStream fis = new FileInputStream( "database_conf.properties" ) ) {
             props.load( fis);
         }
         Class.forName(props.getProperty("jdbc.driver.class"));
