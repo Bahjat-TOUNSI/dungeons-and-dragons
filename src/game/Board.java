@@ -29,10 +29,10 @@ public class Board {
             counter++;
             listOfElements.add(square);
         }
-        for (Cell element : listOfElements
-        ) {
-            System.out.println(element);
-        }
+//        for (Cell element : listOfElements
+//        ) {
+//            System.out.println(element);
+//        }
     }
 
     /**
