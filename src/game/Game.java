@@ -9,8 +9,6 @@ import java.util.Scanner;
 
 
 public class Game {
-
-
     private Hero hero;
     private Board board;
     private boolean stillPlaying = true;
@@ -95,7 +93,6 @@ public class Game {
             System.out.println("Tapez 'M' pour modifier les infos de votre personnage");
             String letter = scanner.nextLine();
             letterChar = letter.charAt(0);
-
         }
         switch (letterChar) {
             case 'A':
@@ -134,7 +131,6 @@ public class Game {
      * Plays a game
      */
     public void playTheGame() {
-
         System.out.println(hero);
         System.out.println("La partie commence. Bonne chance !");
         boolean endOfGame = false;
@@ -170,7 +166,6 @@ public class Game {
                         this.displayMenu = false;
                         System.out.println(" Vous avez GAGNÉ ! BRAVO !");
                     }
-
                 }
                 if(letterChar == 'Q'){
                     System.out.println("Au revoir et à bientôt !");
@@ -178,7 +173,6 @@ public class Game {
                 }
             }
         }
-        System.out.println(board);
     }
 
     /**

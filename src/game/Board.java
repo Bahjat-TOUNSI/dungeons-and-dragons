@@ -1,40 +1,34 @@
 package game;
 
 import exceptions.OutOfBoardCharacterException;
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+
 public class Board {
 
     private int boardLength = 64;
-   // private Cell[] board = new Cell[boardLength];
-   private List<Cell> board;
-
-
-    /**
-     * this method will get the board
-     * @return returns the board variable
-     */
-//    public Cell[] getBoard() {
-//        return board;
-//    }
+    private List<Cell> board;
 
     /**
      * Creates the board and fills it
      */
     public Board() {
-//        listOfElements = new ArrayList<Cell>();
         board = new ArrayList<>();
         int counter = 0;
         while (counter < boardLength) {
             Cell square = new Cell();
             board.add(square);
             counter++;
-//            listOfElements.add(square);
         }
-//        for (Cell element : listOfElements
-//        ) {
-//            System.out.println(element);
-//        }
-//        System.out.println(listOfElements.get(42));
+/*
+         print the element present on the board in the console
+
+        for (Cell element : board
+        ) {
+            System.out.println(element);
+        }
+       System.out.println(listOfElements.get(42));
+*/
     }
 
     /**
